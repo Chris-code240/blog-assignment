@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    transition: all ease 0.3s;
+    scroll-behavior: smooth;
+}
+.title{
+    text-decoration: antiquewhite underline;
+}
+header{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 10;
+    background-color: inherit;
+}
+.big-l::first-letter{
+   font-size: 7rem;
+   float: left;
+   display: inline-block;
+   margin: 0 0.025em -0.1em 0;
+}
+.big-l{
+    display: inline-block;
+    font-size: 4rem;
+    float: left;
+    margin: 0 0 -0.2em 0;
+}
