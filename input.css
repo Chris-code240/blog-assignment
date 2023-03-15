@@ -28,3 +28,42 @@ header{
     float: left;
     margin: 0 0 -0.2em 0;
 }
+
+.bar{
+    width: 2rem;
+    height: 3px;
+    background-color: white;
+    cursor: pointer;
+    margin: 1px 0;
+    position: relative;
+    left: 0;
+}
+
+.hamburger{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+#menu{
+    position: absolute;
+    right: -100%;
+    top: 2rem;
+    background-color: #41464b60;
+    height: 50vh;
+    width: 30vw;
+    font-size: 1.2rem;
+    color: #08ecfcfb !important;
+}
+.show{
+    right: 0 !important;
+}
+.b-2{
+    /* width: 1rem; */
+    left: 25%;
+}
+ .b-3{
+    left: 50%;
+}

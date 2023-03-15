@@ -7,19 +7,35 @@
     <title>Blog Post</title>
     <link rel="stylesheet" href="output.css">
 </head>
-<body class="bg-darkblue">
+<body class="bg-darkblue" id="body">
 
-    <header class="container mx-auto md:my-6">
+    <header class="container mx-auto md:my-6" id="header">
         <nav class="relative flex items-center justify-between">
-            <a href="" class="text-3xl md:text-white text-pinkish">Mordern Technology</a>
+            <a href="" class="text-3xl text-white ">Mordern Technology</a>
 
             <div class="hidden md:block space-x-3 text-creamish md:text-2xl">
-                <a href="" class="hover:text-yellowish">Home</a><a href="" class="hover:text-yellowish">News</a><a href="" class="hover:text-yellowish">Trends</a>
+                <a href="#home" class="hover:text-yellowish">Home</a>
+                <a href="" class="hover:text-yellowish">News</a>
+                <a href="#trends" class="hover:text-yellowish">Trends</a>
+            </div>
+
+            <!-- hamburger -->
+            <div class="hamburger md:hidden" id="hamburger">
+                <span class="bar" id="b-1"></span>
+                <span class="bar" id="b-2"></span>
+                <span class="bar" id="b-3"></span>
+            </div>
+
+            <!-- menu -->
+            <div class="flex flex-col items-center md:hidden absolute space-y-3 text-2xl" id="menu">
+                <a href="#home" class="hover:text-yellowish">Home</a>
+                <a href="" class="hover:text-yellowish">News</a>
+                <a href="#trends" class="hover:text-yellowish">Trends</a>
             </div>
         </nav>
     </header>
 
-    <section class="container mx-auto mt-6 md:mt-0">
+    <section class="container mx-auto mt-6 md:mt-0" id="home">
         <div id="default-carousel" class="relative" data-carousel="slide">
             <div class="relative h-56 overflow-hidden md:h-96">
                  <h1 class="h1 text-4xl text-white">Mordern Technology</h1>
@@ -57,6 +73,56 @@
             </div>
         </div>
     </section>
+
+    <!-- trends -->
+    <section class="container mx-auto my-6" id="trends">
+        <h1 class="h1 text-4xl text-white underline text-center my-6">
+            Trends
+        </h1>
+        <div class="flex items-center flex-wrap justify-center md:justify-between ">
+            <!-- trend 1 -->
+            <div class="flex flex-col items-start bg-whiteish w-96 md:w-1/4 p-2 py-2 space-y-3 mr-1 mt-1">
+                <!-- head -->
+                <div class="flex space-x-3 items-center w-full">
+                    <span class="p-1 px-2 md:p-2 md:px-3 rounded-full text-white bg-blueish">01</span>
+                    <p class="md:text-2xl">The World Of VR</p>
+                </div>
+                <div class="w-full">
+                    <img src="img/man-vr.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="flex flex-col items-start bg-whiteish w-96 md:w-1/4 p-2 py-2 space-y-3 mr-1 mt-1">
+                <!-- head -->
+                <div class="flex space-x-3 items-center w-full">
+                    <span class="p-1 px-2 md:p-2 md:px-3 rounded-full text-white bg-blueish">02</span>
+                    <p class="md:text-2xl">The World Of VR</p>
+                </div>
+                <div class="w-full">
+                    <img src="img/man-vr.jpg" alt="">
+                </div>
+            </div>
+
+
+            <div class="flex flex-col items-start bg-whiteish w-96 md:w-1/4 p-2 py-2 space-y-3 mr-1 mt-1">
+                <!-- head -->
+                <div class="flex space-x-3 items-center w-full">
+                    <span class="p-1 px-2 md:p-2 md:px-3 rounded-full text-white bg-blueish">03</span>
+                    <p class="md:text-2xl">The World Of VR</p>
+                </div>
+                <div class="w-full">
+                    <img src="img/man-vr.jpg" alt="">
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+    <footer class="container mx-auto py-3">
+        <p class="text-center text-gray-400">
+            All rights are reserved &copy; 2023
+        </p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
