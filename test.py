@@ -29,8 +29,9 @@ def median(l1=[],l2=[]):
     if len(ar) % 2 == 0:
         return (ar[int(len(ar)/2)] + ar[int(len(ar)/2) - 1]) / 2
     elif len(ar) % 2 != 0:
-        return ar[int(len(ar)/2)]
+        return ar.index(ar[int(len(ar)/2)]) + 1
 
-print(median([1,2,3],[4,5]))
+print(median([1,3],[2]))
+
 
 
