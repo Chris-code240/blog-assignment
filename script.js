@@ -8,6 +8,8 @@ hamburger.addEventListener("click",()=>{
     b1.classList.toggle("b-1")
     b2.classList.toggle("b-2")
     b3.classList.toggle("b-3")
+    menu.classList.toggle("flex")
+    menu.classList.toggle("hidden")
     menu.classList.toggle("show")
 })
 
